@@ -9,6 +9,7 @@ Requirements:
 * Windows 10
 * NI VISA or NI MAX software
 * GPIB to USB cable 
+
 It is important to note that this code was written for Windows 10, and has not been tested for other operating system. Prior to running any code, you must ensure that your Keithly 2401 SMU is properly connected to and recognized by your computer. A GPIB to USB cable is required for this purpose. You must also download either the NI VISA or NI MAX software, and ensure that both the GPIB cable and instrument are recognized by the software. Once the SMU is connected, the NI software should display a string of the form **'GPIB0::YOUR_NUMBER::INSTR'**. Be sure to save this string, as it will be important later. 
 ## Installation
 
