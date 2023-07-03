@@ -41,7 +41,7 @@ Once you are ready to get started, pass the following command in your shell:
 ```bash
 python THE_PROGRAM_YOU_CHOSE_script.py
 ```
-That's it! Your plots should automatically open and display data!
+That's it! Your plots should automatically open and begin displaying data! Once the program is finished, your plots and data will be saved in the current folder. 
 
 **NOTE: Before performing any experiment on an electrochemical system, you should test the program is doing what you expect by connecting your SMU to a resistor and running at least one of the above scripts.**
 
