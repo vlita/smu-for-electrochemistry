@@ -1,7 +1,7 @@
 
 # Electrolysis with Keithley 2401 SMU
 ![](https://i.imgur.com/CvJNywC.gif)
-This repository is intended for the python-friendly chemist who wants to perform real-time measurements on a two-electrode cell using Keithley’s Standard Series 2401 Source Measure Unit. Galvanostatic and potentiostatic methods of electrolysis are supported, as well as a method for two-electrode cyclic voltammetry. The maximum accurate resolution of this code is two datapoints per second. Instrument cannot exceed 20V/1A.
+This repository is intended for the python-friendly chemist who wants to perform real-time measurements on a two-electrode cell using Keithley’s Standard Series 2401 Source Measure Unit. Galvanostatic and potentiostatic methods of electrolysis are supported, as well as a method for two-electrode cyclic voltammetry. Instrument cannot exceed 20V/1A.
 
 ## Initial Setup
 Requirements:
