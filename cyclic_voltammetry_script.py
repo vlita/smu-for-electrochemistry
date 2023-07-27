@@ -18,10 +18,10 @@ SMU.initial_setup()
 plt.ion()
 
 #CHANGE THESE VALUES BEFORE RUNNING THE SCRIPT
-initial_voltage = 1 #sets initial voltage (V)
-final_voltage = 5 #sets final voltage (V)
-scan_rate = 1 #sets a scan rate (V/s)
-cycles = 3 #sets number of cycles
+initial_voltage = 0 #sets initial voltage (V)
+final_voltage = 4 #sets final voltage (V)
+scan_rate = 0.1 #sets a scan rate (V/s)
+cycles = 5 #sets number of cycles
 
 #generates list of voltage values based on range and scan rate
 v = K2401.vlist()
@@ -59,26 +59,13 @@ for voltage in v_range:
     vc.on_running(voltages, currents)
     
     time_2 = time.time()
-    time_error_1 = time_2 - time_1
+    time_error = time_2 - time_1
             
-    if time_error_1 < 0.5:
-        time.sleep(0.5 - time_error_1)
+    if time_error < 1:
+        time.sleep(1 - time_error)
     else:
-        time.sleep(time_error_1)
-            
-    I, V = SMU.single_Imeas()
-    currents.append(I)
-    voltages.append(V)
-    vc.on_running(voltages, currents)
-                    
-    time_3 = time.time()
-    time_error_2 = time_3 - time_2
-            
-    if time_error_2 < 0.5:
-        time.sleep(0.5 - time_error_2)
-    else:
-        time.sleep(time_error_2)
-                
+        time.sleep(time_error)
+
     times.append(time.time() - time0)
         
     
